@@ -29,10 +29,10 @@
         </v-row>
         <v-row no-gutters class="mt-5">
             <v-col cols="6">
-                <v-btn class ="pl-0" text color="white"><v-icon>mdi-bookshelf</v-icon>Projects</v-btn>
+                <v-btn class ="pl-0" text color="white" :to="{name: 'Projects'}"><v-icon>mdi-bookshelf</v-icon>Projects</v-btn>
             </v-col>
             <v-col cols="6">
-                <v-btn text color="white"><v-icon>mdi-school</v-icon>Education</v-btn>
+                <v-btn text color="white" :to="{name: 'Education'}"><v-icon>mdi-school</v-icon>Education</v-btn>
             </v-col>
         </v-row>
         <v-row>
@@ -43,9 +43,9 @@
             </p>
         </v-row>
         <v-row class="mt-0">
-            <v-icon color="white">mdi-gmail</v-icon>
-            <v-icon color="white">mdi-linkedin</v-icon>
-            <v-icon color="white">mdi-github</v-icon>
+            <v-btn icon href="mailto:matheusm920@gmail.com" target="_blank"><v-icon color="white">mdi-gmail</v-icon></v-btn>
+            <v-btn href="https://www.linkedin.com/in/matheus-moreira-da-silva-9ab50615a/" icon target="_blank"><v-icon color="white">mdi-linkedin</v-icon></v-btn>
+            <v-btn href="https://github.com/Matheus920" target="_blank" icon><v-icon color="white">mdi-github</v-icon></v-btn>
         </v-row>
       </div>
   </v-container>
@@ -65,7 +65,6 @@ export default {
 .side-menu {
     margin-left: 0 !important;
     height: 100%;
-    width: 20% !important;
     color: white;
 }
 </style>
