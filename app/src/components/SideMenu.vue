@@ -1,5 +1,5 @@
 <template>
-  <v-container class="primary side-menu">
+  <v-container class="primary side-menu pt-0 pb-0">
       <div class="d-flex align-center flex-column">
         <v-row>
             <v-col>
@@ -24,6 +24,29 @@
                 <p class="text-subtitle-1 text-center">Fullstack Developer</p>
             </v-col>
         </v-row>
+        <v-row>
+            <v-icon color="white">mdi-map-marker</v-icon> Guarulhos - SP - Brazil
+        </v-row>
+        <v-row no-gutters class="mt-5">
+            <v-col cols="6">
+                <v-btn class ="pl-0" text color="white"><v-icon>mdi-bookshelf</v-icon>Projects</v-btn>
+            </v-col>
+            <v-col cols="6">
+                <v-btn text color="white"><v-icon>mdi-school</v-icon>Education</v-btn>
+            </v-col>
+        </v-row>
+        <v-row>
+            <p class="pl-3 mb-0">
+                I'm a fullstack developer who loves to learn new things. Besides my focus being destined
+                to the JS stack, i'm also got other relevant skills such as Data Science and desktop languages
+                such as Java and C#. Currently i'm looking for an internship opportunity. Feel free to contact me!
+            </p>
+        </v-row>
+        <v-row class="mt-0">
+            <v-icon color="white">mdi-gmail</v-icon>
+            <v-icon color="white">mdi-linkedin</v-icon>
+            <v-icon color="white">mdi-github</v-icon>
+        </v-row>
       </div>
   </v-container>
 </template>
@@ -43,5 +66,6 @@ export default {
     margin-left: 0 !important;
     height: 100%;
     width: 20% !important;
+    color: white;
 }
 </style>
